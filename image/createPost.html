@@ -1,0 +1,63 @@
+<div className="postGenrate">
+        <div className="postContainer">
+          <div className="uplodeImageContainer">
+            <div className="preview">
+            </div>
+            <div className="uplodeAction">
+              <label htmlFor="imguplode">
+                <p className="uplimg">upload image</p>
+              </label>
+              <input
+                type="file"
+                id="imguplode"
+                name="img"
+              
+                className="uplodeImgInput"
+              />
+            </div>
+          </div>
+          <div className="uplodePostinfo">
+            <form onSubmit={HandleUplodeSubmit}>
+              <div className="group">
+                <label htmlFor="name">photo by</label>
+                <input
+                  type="text"
+                  className="info"
+                  name="name"
+                  placeholder="name"
+                
+                />
+              </div>
+              <div className="group">
+                <label htmlFor="tags">tags</label>
+                <div>
+                  <input
+                    type="text"
+                    className="info"
+                    name="tag"
+                    placeholder="tags"
+                   
+                  />
+                  <button className="uploadbtn">
+                    add
+                  </button>
+                </div>
+              </div>
+
+              <div className="taglist">
+                <ul>
+                  <li className="listtag">
+                        #tag
+                        <span className="del" >
+                          ❌
+                        </span>
+                      </li>
+                </ul>
+              </div>
+              <div className="upload">
+                <button type="submit" className="uploadbtn">upload</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
